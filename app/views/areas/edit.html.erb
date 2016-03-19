@@ -1,0 +1,39 @@
+<h1>This is area page</h1>
+
+<%= form_for :area, url: area_path, method: :put do |t| %>
+  
+<div>
+  <label>Name:</label>  
+  <%= t.text_field :name %>
+</div>
+
+<div>
+  <label>Address:</label>
+  <%= t.text_field :address %>
+</div>
+
+<div>
+  <label>City:</label>
+  <%= t.text_field :city %>
+</div>
+
+<div>
+  <label>Postcode:</label>
+  <%= t.text_field :postcode %>
+</div>
+
+<div>
+  <label>State:</label>
+  <%= t.text_field :state %>
+</div>
+
+<div>
+  <label>Image:</label>
+  <%= t.file_field :image %>
+</div>
+
+<div>
+  <%= t.submit "Edit Area!" %>
+</div>  
+
+<% end %>

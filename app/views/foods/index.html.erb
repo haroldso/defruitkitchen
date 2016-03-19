@@ -1,11 +1,11 @@
 <h1>This is the food index</h1>
 
 <% @food.each_with_index do | t, index| %>
-<div>
-<%= link_to t do %>
-<%= "#{index+1}. #{t.title}" %>
-</div>
-<% end %>
+  <div>
+  <%= link_to t do %>
+  <% = "#{index+1}. #{t.title}" %>
+  </div>
+  <% end %>
 
 <% end %>
 

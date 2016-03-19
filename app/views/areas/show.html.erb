@@ -1,0 +1,29 @@
+<div>
+  <h1><%= @area.name %></h1>
+</div>
+
+<div>
+  <%= @area.address %>
+</div>
+
+<div>
+  <%= @area.city %>
+</div>
+
+<div>
+  <%= @area.postcode %>
+</div>
+
+<div>
+  <%= @area.state %>
+</div>
+
+<div class="btn btn-warning">
+<%= link_to "Delete this post", area_path(@area), method: :delete %></div>
+
+<div class="btn btn-warning">
+<%= link_to "Edit this post", edit_area_path %></div>
+
+<div class="btn btn-warning">
+<%= link_to "Back", areas_path %>
+</div>
