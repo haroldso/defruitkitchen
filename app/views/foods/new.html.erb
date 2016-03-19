@@ -1,0 +1,39 @@
+<h1>This is create food page</h1>
+
+<%= form_for :food, url: foods_path do |t| %>
+  
+<div>
+  <label>Title:</label>  
+  <%= t.text_field :title %>
+</div>
+
+<div>
+  <label>Description:</label>
+  <%= t.text_field :description %>
+</div>
+
+<div>
+  <label>Date</label>
+  <%= t.date_field :date %>
+</div>
+
+<div>
+  <label>Price:</label>
+  <%= t.text_field :price %>
+</div>
+
+<div>
+  <label>Area id:</label>
+  <%= t.text_field :area_id %>
+</div>
+
+<div>
+  <label>Image:</label>
+  <%= t.file_field :images %>
+</div>
+
+<div>
+  <%= t.submit "Create Food!" %>
+</div>  
+
+<% end %>

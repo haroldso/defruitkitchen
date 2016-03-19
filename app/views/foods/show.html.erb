@@ -1,0 +1,29 @@
+<div>
+  <h1><%= @food.title %></h1>
+</div>
+
+<div>
+  <%= @food.description %>
+</div>
+
+<div>
+  <%= @food.date %>
+</div>
+
+<div>
+  <%= @food.price %>
+</div>
+
+<div>
+  <%= @food.area_id %>
+</div>
+
+<div class="btn btn-warning">
+<%= link_to "Delete this post", food_path(@food), method: :delete %></div>
+
+<div class="btn btn-warning">
+<%= link_to "Edit this post", edit_food_path %></div>
+
+<div class="btn btn-warning">
+<%= link_to "Back", foods_path %>
+</div>
